@@ -131,13 +131,15 @@ echo 'Creating database'
 docker-compose run app rake db:create
 echo 'Migrating database'
 docker-compose run app rake db:migrate
-echo 'run "docker-compose up"'
-docker-compose up
 
-echo 'Lets see if there is something running'
-
-echo 'Check your browser -> http://0.0.0.0:3000/'
 echo '---------------------------------------------------'
-echo 'For the future you can start docker by yourself with "docker-compose up".'
+echo 'You can now start docker and run your project with "docker-compose up".'
 EOF
+
+echo 'Install docker'
+source install.sh
+
+echo 'Remove dockerize script'
+rm dockerize.sh
+
 
