@@ -12,7 +12,7 @@ Move into the rails project folder. Run the dockerize.sh script in this director
 source dockerize.sh
 ~~~~
 
-The script changes: 
+The script overwrites: 
   * config/database.yml
   
 and creates the following files:
