@@ -21,10 +21,10 @@ and creates the following files:
   * docker-compose.yml
   * install.sh
   
- You can now run the install script
+It then runs the install.sh script automatically and deletes itself when finished. Now you can start docker with
  
  ~~~~
- source install.sh
+ docker-compose up
  ~~~~
 
 and you should see your project running at http://0.0.0.0:3000/ .
