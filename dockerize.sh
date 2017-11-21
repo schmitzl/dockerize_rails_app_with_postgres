@@ -125,8 +125,8 @@ gem install rails bundler
 bundle install
 
 docker-compose build
+docker-compose up -d
 docker-compose down
-sleep 5
 echo 'Creating database'
 docker-compose run app rake db:create
 echo 'Migrating database'
